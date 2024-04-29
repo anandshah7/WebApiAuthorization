@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebAuth.Helpers;
 
 namespace WebAuth;
 
  [Route("api/[controller]")]
+[Authorize]
 [ApiController]
 public class HomeControllers : ControllerBase
 {

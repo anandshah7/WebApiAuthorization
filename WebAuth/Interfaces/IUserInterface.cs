@@ -2,7 +2,8 @@
 
 public interface IUserInterface
 {
-     Users GetUserByUser_Id(Guid user_id);
+    Task<AuthenticateResponse?> Authenticate(AuthenticateReq model);
+     Task<Users> GetUserByUser_Id(Guid user_id);
 
-
+    
 }
